@@ -1,0 +1,19 @@
+MDStackLayout:
+    padding:80
+    spacing:30
+
+    MDTextField:
+        hint_text : "Input Mail"
+        id:input_mail
+        mode:"rectangle"
+        padding:10
+
+    MDRaisedButton:
+        text:"Verify Email"
+        md_bg_color:app.theme_cls.primary_color
+        text_color:"white"
+        on_release:app.validate_spam()
+    
+    MDLabel:
+        id:spam_output
+        text_color:"white"
